@@ -187,5 +187,35 @@ section {
   margin-top: 40px;
   width: 140px;
 }
+.project__mesprojets {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.project__card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px 20px 0px;
+  max-width: 450px;
+}
+.project__card img {
+  object-fit: cover;
+}
+.project__card__titre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.project__card__titre__num h4 {
+  font-size: 40px;
+}
+.project__card__titre__name-lien {
+  font-size: 10px;
+}
+.project__card__titre__name-nom {
+  font-size: 25px;
+  margin-top: -11px;
+}
 
 /*# sourceMappingURL=main.css.map */

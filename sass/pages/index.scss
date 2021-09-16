@@ -87,6 +87,41 @@ section {
             }
         }
     }
+    &__mesprojets {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0px 20px 0px;
+        max-width: 450px;
+        & img {
+            object-fit: cover;
+        }
+        &__titre {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            &__num {
+                h4 {
+                    font-size: 40px;
+                }
+            }
+            &__name {
+                &-lien {
+                    font-size: 10px;
+
+                }
+                &-nom {
+                    font-size: 25px;
+                    margin-top: -11px;
+                }
+            }
+        }
+    }
     
 
 }
