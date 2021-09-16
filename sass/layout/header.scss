@@ -1,7 +1,6 @@
 .navbar {
     max-width: 1440px;
     margin: auto;
-    padding: 0 2rem;
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -39,6 +38,11 @@
         display: flex;
         column-gap: 10px;
         text-decoration: underline;
+    }
+}
 
+@media screen and (max-width: 950px) {
+    .navbar__desc {
+        display: none;
     }
 }
