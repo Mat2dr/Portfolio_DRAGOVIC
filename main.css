@@ -48,8 +48,65 @@ body {
   color: white;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.navbar__logo {
+  padding-right: 10px;
+}
+.navbar__logo__nom {
+  display: flex;
+}
+.navbar__logo__nom .nom {
+  font-weight: 600;
+  font-size: 16px;
+}
+.navbar__logo__nom .prenom {
+  font-weight: 300;
+  font-size: 16px;
+}
+.navbar__logo__portfolio {
+  margin-top: -10px;
+}
+.navbar__logo__portfolio h1 {
+  font-weight: 600;
+  font-size: 28px;
+}
+.navbar__desc {
+  max-width: 450px;
+}
+.navbar__desc p {
+  font-weight: 300;
+}
+.navbar__desc a {
+  text-decoration: underline;
+}
+.navbar__main {
+  display: flex;
+  column-gap: 10px;
+  text-decoration: underline;
+}
+
 body {
   background-color: #1E2123;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
 }
 
 /*# sourceMappingURL=main.css.map */

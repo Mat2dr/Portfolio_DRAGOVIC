@@ -1,0 +1,41 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    &__logo {
+        padding-right: 10px;
+        &__nom {
+            display: flex;
+            & .nom {
+                font-weight: 600;
+                font-size: 16px;
+            }
+            & .prenom {
+                font-weight: 300;
+                font-size: 16px;
+            }
+        }
+        &__portfolio {
+            margin-top: -10px;
+            & h1 {
+                font-weight: 600;
+                font-size: 28px;
+            } 
+        }
+    }
+    &__desc {
+        max-width: 450px;
+        & p{
+            font-weight: 300;
+        }
+        & a{
+            text-decoration: underline;
+        }
+    }
+    &__main {
+        display: flex;
+        column-gap: 10px;
+        text-decoration: underline;
+
+    }
+}
