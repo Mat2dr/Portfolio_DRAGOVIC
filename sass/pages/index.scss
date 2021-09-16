@@ -6,7 +6,7 @@ section {
     max-width: 1440px;
     margin: auto;
     padding: 0 2rem;
-    height: 100vh;
+    height: 1000px;
     scroll-snap-align: start;
 }
 
@@ -32,7 +32,7 @@ section {
         margin-top: -130px;
         &-dessous {
             z-index: 2;
-            h3 {
+            h1 {
                 font-weight: 900;
                 font-size: 142px;
             }
@@ -40,7 +40,7 @@ section {
         &-dessus {
             z-index: 1;
             margin-top: -80px;
-            h3 {
+            h1 {
                 color: #1E2123;
                 font-weight: 700;
                 font-size: 70px;
@@ -51,4 +51,78 @@ section {
     & .arrow i {
         font-size: 25px;
     }
+}
+
+.project {
+    padding: 10px 20px 10px 20px;
+    &__titre {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        &-full {
+            position: absolute;
+            z-index: 2;
+            margin-left: 55px;
+            h3 {
+                font-weight: 700;
+                font-size: 70px;
+            }
+        }
+        &-empty {
+            position: absolute;
+            z-index: 0;
+            margin: 30px 30px 30px 70px;
+            h3 {
+                color: #1E2123;
+                font-weight: 700;
+                font-size: 70px;
+                text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #fff, -1px 1px 0 #FFF, 1px 1px 0 #fff;
+            }
+        }
+        &-gif {
+            z-index: 1;
+            img {
+                margin-top: 40px;
+                width: 140px;
+            }
+        }
+    }
+    &__mesprojets {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0px 20px 0px;
+        max-width: 450px;
+        & img {
+            object-fit: cover;
+        }
+        &__titre {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            &__num {
+                h4 {
+                    font-size: 40px;
+                }
+            }
+            &__name {
+                &-lien {
+                    font-size: 10px;
+
+                }
+                &-nom {
+                    font-size: 25px;
+                    margin-top: -11px;
+                }
+            }
+        }
+    }
+    
+
 }
