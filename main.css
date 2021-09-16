@@ -48,10 +48,18 @@ body {
   color: white;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   padding: 20px;
+}
+.navbar__logo {
+  padding-right: 10px;
 }
 .navbar__logo__nom {
   display: flex;
@@ -72,9 +80,20 @@ body {
   font-size: 28px;
 }
 .navbar__desc {
-  text-align: center;
   max-width: 450px;
 }
+.navbar__desc p {
+  font-weight: 300;
+}
+.navbar__desc a {
+  text-decoration: underline;
+}
+.navbar__main {
+  display: flex;
+  column-gap: 10px;
+  text-decoration: underline;
+}
+
 body {
   background-color: #1E2123;
 }
