@@ -48,6 +48,33 @@ body {
   color: white;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.navbar__logo__nom {
+  display: flex;
+}
+.navbar__logo__nom .nom {
+  font-weight: 600;
+  font-size: 16px;
+}
+.navbar__logo__nom .prenom {
+  font-weight: 300;
+  font-size: 16px;
+}
+.navbar__logo__portfolio {
+  margin-top: -10px;
+}
+.navbar__logo__portfolio h1 {
+  font-weight: 600;
+  font-size: 28px;
+}
+.navbar__desc {
+  text-align: center;
+  max-width: 450px;
+}
 body {
   background-color: #1E2123;
 }
