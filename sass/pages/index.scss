@@ -92,6 +92,7 @@ section {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
+        padding: 10vh 0vh 10vh 0ch;
     }
     &__card {
         display: flex;
@@ -123,9 +124,48 @@ section {
             }
         }
     }
-    
-
 }
+.contact {
+    padding: 85px 20px 85px 20px;
+    &__titre {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        &-full {
+            position: absolute;
+            z-index: 2;
+            margin: 30px 30px 30px 70px;
+            h3 {
+                font-weight: 700;
+                font-size: 70px;
+            }
+        }
+        &-empty {
+            position: absolute;
+            z-index: 0;
+            margin-left: 55px;
+            h3 {
+                color: #1E2123;
+                font-weight: 700;
+                font-size: 70px;
+                text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #fff, -1px 1px 0 #FFF, 1px 1px 0 #fff;
+            }
+        }
+        &-gif {
+            z-index: 1;
+            img {
+                margin-top: 5px;
+                width: 140px;
+            }
+        }
+    }
+}
+
+.formulaire {
+    padding: 50px 0px 50px 0px;
+}
+
 @media screen and (max-width: 1413px) {
     .hero__text {
         &-dessous {
