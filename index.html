@@ -151,31 +151,40 @@
                 </div>
             </div>
 
-            <div class="formulaire">
-                <form action="action_page.php">
+            <div class="contact__content">
+                <div class="contact__desc">
+                    <div class="contact__desc__titre">
+                        <div class="contact__desc__titre__num">
+                            <h4>P.?</h4>
+                        </div>
+                        <div class="contact__desc__titre__name">
+                            <div class="contact__desc__titre__name-lien">
+                                <a href="#">Faite moi part de vos</a>
+                            </div>
+                            <div class="contact__desc__titre__name-nom">
+                                <h3>PROJETS</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
-            
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-            
-                <label for="country">Country</label>
-                <select id="country" name="country">
-                  <option value="australia">Australia</option>
-                  <option value="canada">Canada</option>
-                  <option value="usa">USA</option>
-                </select>
-            
-                <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-            
-                <input type="submit" value="Submit">
-            
-              </form>
-            </div>
+                <div class="formulaire">
+                    <form action="#">
 
-            
+                    <label for="fname">Nom :</label>
+                    <input type="text" id="fname" name="nom" placeholder="...">
+                
+                    <label for="lname">Email:</label>
+                    <input type="text" id="lname" name="email" placeholder="...">
+                
+                    <label for="subject">Message:</label>
+                    <textarea id="subject" name="subject" placeholder="..." style="height:200px"></textarea>
+                
+                    <input class="btn" type="submit" value="Envoyer">
+                
+                    </form>
+                </div>
+            </div>    
         </section>
 
         <section class="four">

@@ -71,7 +71,7 @@ section {
         &-empty {
             position: absolute;
             z-index: 0;
-            margin: 30px 30px 30px 70px;
+            margin: 20px 30px 30px 70px;
             h3 {
                 color: #1E2123;
                 font-weight: 700;
@@ -135,7 +135,7 @@ section {
         &-full {
             position: absolute;
             z-index: 2;
-            margin: 30px 30px 30px 70px;
+            margin: 35px 30px 30px 50px;
             h3 {
                 font-weight: 700;
                 font-size: 70px;
@@ -144,6 +144,7 @@ section {
         &-empty {
             position: absolute;
             z-index: 0;
+            margin-top: 10px;
             margin-left: 55px;
             h3 {
                 color: #1E2123;
@@ -155,8 +156,39 @@ section {
         &-gif {
             z-index: 1;
             img {
-                margin-top: 5px;
                 width: 140px;
+            }
+        }
+    }
+    &__content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    &__desc {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 20px 20px 20px;
+        &__titre {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            &__num {
+                h4 {
+                    font-size: 40px;
+                }
+            }
+            &__name {
+                &-lien {
+                    font-size: 10px;
+
+                }
+                &-nom {
+                    font-size: 25px;
+                    margin-top: -11px;
+                }
             }
         }
     }
@@ -164,7 +196,32 @@ section {
 
 .formulaire {
     padding: 50px 0px 50px 0px;
+    max-width: 700px;
+    & .btn {
+        background-color: white;
+        color: black;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 10px 20px 10px 20px;
+        border: 2px solid white;
+    }
 }
+input[type=text], select, textarea {
+    background-color: #1E2123;
+    color: white;
+    width: 100%;
+    padding: 12px;
+    border: 2px solid white;
+    box-sizing: border-box;
+    margin-top: 6px; 
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+
+
+
+
 
 @media screen and (max-width: 1413px) {
     .hero__text {

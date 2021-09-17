@@ -176,7 +176,7 @@ section {
 .project__titre-empty {
   position: absolute;
   z-index: 0;
-  margin: 30px 30px 30px 70px;
+  margin: 20px 30px 30px 70px;
 }
 .project__titre-empty h3 {
   color: #1E2123;
@@ -236,7 +236,7 @@ section {
 .contact__titre-full {
   position: absolute;
   z-index: 2;
-  margin: 30px 30px 30px 70px;
+  margin: 35px 30px 30px 50px;
 }
 .contact__titre-full h3 {
   font-weight: 700;
@@ -245,6 +245,7 @@ section {
 .contact__titre-empty {
   position: absolute;
   z-index: 0;
+  margin-top: 10px;
   margin-left: 55px;
 }
 .contact__titre-empty h3 {
@@ -257,12 +258,59 @@ section {
   z-index: 1;
 }
 .contact__titre-gif img {
-  margin-top: 5px;
   width: 140px;
+}
+.contact__content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.contact__desc {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 20px 20px;
+}
+.contact__desc__titre {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.contact__desc__titre__num h4 {
+  font-size: 40px;
+}
+.contact__desc__titre__name-lien {
+  font-size: 10px;
+}
+.contact__desc__titre__name-nom {
+  font-size: 25px;
+  margin-top: -11px;
 }
 
 .formulaire {
   padding: 50px 0px 50px 0px;
+  max-width: 700px;
+}
+.formulaire .btn {
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 20px 10px 20px;
+  border: 2px solid white;
+}
+
+input[type=text], select, textarea {
+  background-color: #1E2123;
+  color: white;
+  width: 100%;
+  padding: 12px;
+  border: 2px solid white;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
 @media screen and (max-width: 1413px) {
