@@ -24,6 +24,9 @@ section {
         width: 30%;
         z-index: 1;
         min-width: 200px;
+        -webkit-animation: fade-in-bottom 1s both;
+	    animation: fade-in-bottom 1s both;
+        animation-delay: 0.5s;
     }
     &__text {
         display: flex;
@@ -166,6 +169,7 @@ section {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        padding: 10vh 0 0vh 0;
     }
     &__desc {
         display: flex;

@@ -53,6 +53,30 @@ a {
   color: white;
 }
 
+@-webkit-keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .navbar {
   max-width: 1440px;
   margin: auto;
@@ -128,6 +152,9 @@ section {
   width: 30%;
   z-index: 1;
   min-width: 200px;
+  -webkit-animation: fade-in-bottom 1s both;
+  animation: fade-in-bottom 1s both;
+  animation-delay: 0.5s;
 }
 .hero__text {
   display: flex;
@@ -266,6 +293,7 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding: 10vh 0 0vh 0;
 }
 .contact__desc {
   display: flex;
