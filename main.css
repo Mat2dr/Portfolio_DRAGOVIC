@@ -203,11 +203,14 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 50px 50px;
   background-color: white;
   border-radius: 30px;
   margin: 100px 0px;
   height: 500px;
+  transition: all 1s ease;
+  cursor: pointer;
 }
 .project__card__text {
   color: black;
@@ -218,10 +221,32 @@ body {
   font-size: 50px;
   margin-bottom: -20px;
 }
+.project__card__text h4 {
+  font-weight: 500;
+}
+.project__card__text p {
+  padding: 20px 0px;
+}
+.project__card:hover {
+  transform: scale(1.01);
+}
+.project__card:hover .iphone1 {
+  margin-left: -10px;
+  margin-top: 10px;
+}
+.project__card:hover .iphone2 {
+  margin-right: -10px;
+  margin-bottom: 5px;
+}
+.project__card:hover .macbook {
+  margin-right: -10px;
+  margin-bottom: 10px;
+}
 
 .iphone1 {
   max-width: 300px;
   position: absolute;
+  transition: all 1s ease;
 }
 
 .iphone2 {
@@ -229,6 +254,19 @@ body {
   position: absolute;
   right: 0px;
   bottom: 30px;
+  transition: all 1s ease;
+}
+
+.macbook {
+  max-width: 1000px;
+  position: absolute;
+  right: -15px;
+  transform: rotate(10deg);
+  transition: all 1s ease;
+}
+
+.reservia {
+  text-align: start;
 }
 
 .contact {
