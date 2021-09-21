@@ -43,6 +43,10 @@ td, th {
   padding: 0;
 }
 
+@font-face {
+  font-family: Cooper;
+  src: url(content/Acworth/Acworth-Bold.otf);
+}
 body {
   font-family: "Poppins", sans-serif;
   color: white;
@@ -77,6 +81,17 @@ a {
     opacity: 1;
   }
 }
+.btn-contact {
+  height: 35px;
+  padding: 0px 15px;
+  background-color: #FA777C;
+  border: none;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-align: center;
+  border-radius: 10px;
+}
+
 .navbar {
   max-width: 1440px;
   margin: auto;
@@ -150,6 +165,7 @@ body {
 .hero__text-dessous h1 {
   font-weight: 900;
   font-size: 142px;
+  color: #71D08C;
 }
 .hero__text-dessus h1 {
   color: #1E2123;
@@ -205,15 +221,14 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 50px 50px;
-  background-color: white;
-  border-radius: 30px;
+  background-color: #333333;
   margin: 100px 0px;
   height: 500px;
   transition: all 1s ease;
   cursor: pointer;
 }
 .project__card__text {
-  color: black;
+  color: white;
   text-align: center;
 }
 .project__card__text h3 {
