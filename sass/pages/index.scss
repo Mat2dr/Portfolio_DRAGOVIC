@@ -2,11 +2,6 @@ body {
     background-color: #1D1D1D;
 }
 
-section {
-    max-width: 1440px;
-    margin: auto;
-}
-
 .hero {
     display: flex;
     flex-direction: column;
@@ -50,6 +45,9 @@ section {
         position: relative;
         display: flex;
         flex-direction: column;
+        max-width: 1440px;
+        margin: auto;
+        padding-bottom: 70px;
         &-full {
             position: absolute;
             z-index: 2;
@@ -73,40 +71,39 @@ section {
     }
     &__mesprojets {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 10vh 0vh 10vh 0ch;
+        flex-direction: column;
+        max-width: 1440px;
+        margin: auto;
     }
     &__card {
+        position: relative;
         display: flex;
         flex-direction: column;
-        padding: 20px 0px 20px 0px;
-        & img {
-            object-fit: cover;
-        }
-        &__titre {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            &__num {
-                h4 {
-                    font-size: 40px;
+        padding: 50px 50px;
+        background-color: white;
+        border-radius: 30px;
+        margin: 100px 0px;
+        height: 500px;
+            &__text{
+                color: black;
+                text-align: center;
+                h3 {
+                    font-weight: 900;
+                    font-size: 50px;
+                    margin-bottom: -20px;
                 }
-            }
-            &__name {
-                &-lien {
-                    font-size: 10px;
-
-                }
-                &-nom {
-                    font-size: 25px;
-                    margin-top: -11px;
-                }
-            }
         }
     }
+}
+.iphone1 {
+    max-width: 300px;
+    position: absolute;
+}
+.iphone2 {
+    max-width: 300px;
+    position: absolute;
+    right: 0px;
+    bottom: 30px;
 }
 .contact {
     padding: 85px 20px 85px 20px;
