@@ -2,17 +2,13 @@ body {
     background-color: #1D1D1D;
 }
 
-section {
-    max-width: 1440px;
-    margin: auto;
-}
-
 .hero {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 20px 0px 40px 0px;
     &__img {
+        margin-bottom: -58px;
         width: 30%;
         min-width: 200px;
         -webkit-animation: fade-in-bottom 1s both;
@@ -24,9 +20,11 @@ section {
         flex-direction: column;
         align-items: center;
         &-dessous {
+            margin-bottom: -80px;
             h1 {
                 font-weight: 900;
                 font-size: 142px;
+                color: #71D08C;
             }
         }
         &-dessus {
@@ -38,8 +36,9 @@ section {
             }
         }
     }
-    & .arrow i {
+    & .arrow {
         font-size: 25px;
+        top: 590px;
     }
 }
 
@@ -50,6 +49,9 @@ section {
         position: relative;
         display: flex;
         flex-direction: column;
+        max-width: 1440px;
+        margin: auto;
+        padding-bottom: 70px;
         &-full {
             position: absolute;
             z-index: 2;
@@ -73,40 +75,74 @@ section {
     }
     &__mesprojets {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 10vh 0vh 10vh 0ch;
+        flex-direction: column;
+        max-width: 1440px;
+        margin: auto;
     }
     &__card {
+        position: relative;
         display: flex;
         flex-direction: column;
-        padding: 20px 0px 20px 0px;
-        & img {
-            object-fit: cover;
-        }
-        &__titre {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            &__num {
+        justify-content: center;
+        padding: 50px 50px;
+        background-color: #333333;
+        margin: 100px 0px;
+        height: 500px;
+        transition: all 1s ease;
+        cursor: pointer;
+            &__text{
+                color: white;
+                text-align: center;
+                h3 {
+                    font-weight: 900;
+                    font-size: 50px;
+                    margin-bottom: -20px;
+                }
                 h4 {
-                    font-size: 40px;
+                    font-weight: 500;
                 }
+                p {
+                    padding: 20px 0px;
+                }
+        }
+        &:hover {
+            transform: scale(1.01);
+            .iphone1 {
+                margin-left: -10px;
+                margin-top: 10px;
             }
-            &__name {
-                &-lien {
-                    font-size: 10px;
-
-                }
-                &-nom {
-                    font-size: 25px;
-                    margin-top: -11px;
-                }
+            .iphone2 {
+                margin-right: -10px;
+                margin-bottom: 5px;
+            }
+            .macbook {
+                margin-right: 10px;
+                margin-bottom: 10px;
             }
         }
     }
+}
+.iphone1 {
+    max-width: 300px;
+    position: absolute;
+    transition: all 1s ease;
+}
+.iphone2 {
+    max-width: 300px;
+    position: absolute;
+    right: 0px;
+    bottom: 30px;
+    transition: all 1s ease;
+}
+.macbook {
+    max-width: 900px;
+    position: absolute;
+    right: 30px;
+    transform: rotate(10deg);
+    transition: all 1s ease;
+}
+.reservia {
+    text-align: start;
 }
 .contact {
     padding: 85px 20px 85px 20px;

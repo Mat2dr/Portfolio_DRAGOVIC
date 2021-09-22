@@ -43,6 +43,10 @@ td, th {
   padding: 0;
 }
 
+@font-face {
+  font-family: Cooper;
+  src: url(content/Acworth/Acworth-Bold.otf);
+}
 body {
   font-family: "Poppins", sans-serif;
   color: white;
@@ -77,6 +81,17 @@ a {
     opacity: 1;
   }
 }
+.btn-contact {
+  height: 35px;
+  padding: 0px 15px;
+  background-color: #FA777C;
+  border: none;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-align: center;
+  border-radius: 10px;
+}
+
 .navbar {
   max-width: 1440px;
   margin: auto;
@@ -129,18 +144,14 @@ body {
   background-color: #1D1D1D;
 }
 
-section {
-  max-width: 1440px;
-  margin: auto;
-}
-
 .hero {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 20px 0px 40px 0px;
 }
 .hero__img {
+  margin-bottom: -58px;
   width: 30%;
   min-width: 200px;
   -webkit-animation: fade-in-bottom 1s both;
@@ -152,9 +163,13 @@ section {
   flex-direction: column;
   align-items: center;
 }
+.hero__text-dessous {
+  margin-bottom: -80px;
+}
 .hero__text-dessous h1 {
   font-weight: 900;
   font-size: 142px;
+  color: #71D08C;
 }
 .hero__text-dessus h1 {
   color: #1E2123;
@@ -162,8 +177,9 @@ section {
   font-size: 70px;
   text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #fff, -1px 1px 0 #FFF, 1px 1px 0 #fff;
 }
-.hero .arrow i {
+.hero .arrow {
   font-size: 25px;
+  top: 590px;
 }
 
 .project {
@@ -174,6 +190,9 @@ section {
   position: relative;
   display: flex;
   flex-direction: column;
+  max-width: 1440px;
+  margin: auto;
+  padding-bottom: 70px;
 }
 .project__titre-full {
   position: absolute;
@@ -197,34 +216,77 @@ section {
 }
 .project__mesprojets {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 10vh 0vh 10vh 0ch;
+  flex-direction: column;
+  max-width: 1440px;
+  margin: auto;
 }
 .project__card {
+  position: relative;
   display: flex;
   flex-direction: column;
-  padding: 20px 0px 20px 0px;
+  justify-content: center;
+  padding: 50px 50px;
+  background-color: #333333;
+  margin: 100px 0px;
+  height: 500px;
+  transition: all 1s ease;
+  cursor: pointer;
 }
-.project__card img {
-  object-fit: cover;
+.project__card__text {
+  color: white;
+  text-align: center;
 }
-.project__card__titre {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+.project__card__text h3 {
+  font-weight: 900;
+  font-size: 50px;
+  margin-bottom: -20px;
 }
-.project__card__titre__num h4 {
-  font-size: 40px;
+.project__card__text h4 {
+  font-weight: 500;
 }
-.project__card__titre__name-lien {
-  font-size: 10px;
+.project__card__text p {
+  padding: 20px 0px;
 }
-.project__card__titre__name-nom {
-  font-size: 25px;
-  margin-top: -11px;
+.project__card:hover {
+  transform: scale(1.01);
+}
+.project__card:hover .iphone1 {
+  margin-left: -10px;
+  margin-top: 10px;
+}
+.project__card:hover .iphone2 {
+  margin-right: -10px;
+  margin-bottom: 5px;
+}
+.project__card:hover .macbook {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.iphone1 {
+  max-width: 300px;
+  position: absolute;
+  transition: all 1s ease;
+}
+
+.iphone2 {
+  max-width: 300px;
+  position: absolute;
+  right: 0px;
+  bottom: 30px;
+  transition: all 1s ease;
+}
+
+.macbook {
+  max-width: 900px;
+  position: absolute;
+  right: 30px;
+  transform: rotate(10deg);
+  transition: all 1s ease;
+}
+
+.reservia {
+  text-align: start;
 }
 
 .contact {
