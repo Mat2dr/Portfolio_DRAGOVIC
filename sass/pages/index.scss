@@ -45,9 +45,24 @@ body {
             }
         }
     }
-    & .arrow {
-        font-size: 25px;
-        top: 590px;
+    &__icon {
+        i {
+            font-size: 40px;
+            margin-right: 10px;
+            padding-bottom: 10px;
+        }
+        .fa-linkedin {
+            color: white;
+            &:hover {
+                color: #FFCF95;
+            }
+        }
+        .fa-github {
+            color: white;
+            &:hover {
+                color: #DBD8E2;
+            }
+        }
     }
 }
 
@@ -291,9 +306,6 @@ input[type=text], select, textarea {
                 text-decoration: underline;
                 font-size: 14px;
             }
-        }
-        & .arrow {
-            display: none;
         }
     }
     .project__card__text {

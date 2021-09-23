@@ -191,9 +191,22 @@ body {
   font-size: 70px;
   text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #fff, -1px 1px 0 #FFF, 1px 1px 0 #fff;
 }
-.hero .arrow {
-  font-size: 25px;
-  top: 590px;
+.hero__icon i {
+  font-size: 40px;
+  margin-right: 10px;
+  padding-bottom: 10px;
+}
+.hero__icon .fa-linkedin {
+  color: white;
+}
+.hero__icon .fa-linkedin:hover {
+  color: #FFCF95;
+}
+.hero__icon .fa-github {
+  color: white;
+}
+.hero__icon .fa-github:hover {
+  color: #DBD8E2;
 }
 
 .project {
@@ -431,9 +444,6 @@ input[type=text], select, textarea {
   .hero__text a {
     text-decoration: underline;
     font-size: 14px;
-  }
-  .hero .arrow {
-    display: none;
   }
 
   .project__card__text p {
