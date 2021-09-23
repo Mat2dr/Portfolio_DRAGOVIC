@@ -354,6 +354,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 20px 20px 20px 20px;
+  margin-top: 50px;
 }
 .contact__desc__titre {
   display: flex;
