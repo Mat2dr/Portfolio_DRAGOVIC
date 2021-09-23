@@ -140,6 +140,13 @@ a {
     display: none;
   }
 }
+.footer {
+  padding: 20px;
+}
+.footer p {
+  opacity: 40%;
+}
+
 body {
   background-color: #1D1D1D;
 }
@@ -390,6 +397,10 @@ input[type=text], select, textarea {
   h1 {
     font-size: 120px;
   }
+
+  .macbook {
+    max-width: 80%;
+  }
 }
 @media screen and (max-width: 1030px) {
   .hero {
@@ -422,6 +433,25 @@ input[type=text], select, textarea {
     font-size: 14px;
   }
   .hero .arrow {
+    display: none;
+  }
+
+  .project__card__text p {
+    max-width: 317px;
+  }
+}
+@media screen and (max-width: 930px) {
+  .macbook {
+    display: none;
+  }
+}
+@media screen and (max-width: 705px) {
+  .project__card {
+    margin: 50px 0px;
+    height: 360px;
+  }
+
+  .iphone2 {
     display: none;
   }
 }

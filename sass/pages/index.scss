@@ -258,6 +258,9 @@ input[type=text], select, textarea {
     } h1{
         font-size: 120px;
     }
+    .macbook {
+        max-width: 80%;
+    }
 
 }
 @media screen and (max-width: 1030px) {
@@ -293,8 +296,26 @@ input[type=text], select, textarea {
             display: none;
         }
     }
-        
+    .project__card__text {
+        p {
+            max-width: 317px;
+        }
+    }
+}
+@media screen and (max-width: 930px) {
+    .macbook {
+        display: none;
+    }
+}
 
+@media screen and (max-width: 705px) {
+    .project__card {
+        margin: 50px 0px;
+        height: 360px;
+    }
+    .iphone2 {
+        display: none;
+    }
 
 }
 
