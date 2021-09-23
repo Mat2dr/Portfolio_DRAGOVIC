@@ -135,7 +135,7 @@ a {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1030px) {
   .navbar__desc {
     display: none;
   }
@@ -146,12 +146,14 @@ body {
 
 .hero {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  padding: 20px 0px 40px 0px;
+  justify-content: space-around;
+  padding: 20px;
+  max-width: 1440px;
+  margin: auto;
 }
 .hero__img {
-  margin-bottom: -58px;
   width: 30%;
   min-width: 200px;
   -webkit-animation: fade-in-bottom 1s both;
@@ -161,15 +163,20 @@ body {
 .hero__text {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-.hero__text-dessous {
-  margin-bottom: -80px;
+  align-items: flex-start;
 }
 .hero__text-dessous h1 {
   font-weight: 900;
-  font-size: 142px;
+  font-size: 85px;
   color: #71D08C;
+}
+.hero__text-dessous-mobile h1 {
+  font-weight: 900;
+  font-size: 85px;
+  color: #71D08C;
+}
+.hero__text-dessus {
+  margin-top: -50px;
 }
 .hero__text-dessus h1 {
   color: #1E2123;
@@ -234,7 +241,7 @@ body {
 }
 .project__card__text {
   color: white;
-  text-align: center;
+  text-align: start;
 }
 .project__card__text h3 {
   font-weight: 900;
@@ -283,10 +290,6 @@ body {
   right: 30px;
   transform: rotate(10deg);
   transition: all 1s ease;
-}
-
-.reservia {
-  text-align: start;
 }
 
 .contact {
@@ -375,10 +378,10 @@ input[type=text], select, textarea {
 
 @media screen and (max-width: 1413px) {
   .hero__text-dessous h1 {
-    font-size: 90px;
+    font-size: 70px;
   }
   .hero__text-dessus {
-    margin-top: -50px;
+    margin-top: -45px;
   }
   .hero__text-dessus h1 {
     font-size: 50px;
@@ -388,12 +391,16 @@ input[type=text], select, textarea {
     font-size: 120px;
   }
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1030px) {
   .hero {
+    flex-direction: column;
     padding: 50px 20px 50px 20px;
   }
   .hero__text {
-    margin-top: -50px;
+    align-items: center;
+  }
+  .hero__text-dessous {
+    display: none;
   }
   .hero__text-dessous h1 {
     font-size: 80px;
@@ -418,8 +425,12 @@ input[type=text], select, textarea {
     display: none;
   }
 }
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 1030px) {
   .hero__desc {
+    display: none;
+  }
+
+  .hero__text-dessous-mobile {
     display: none;
   }
 }
