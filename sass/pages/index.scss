@@ -30,6 +30,7 @@ body {
             &-mobile {
                 line-height: 75px;
                 h1 {
+                    text-align: center;
                     font-weight: 900;
                     font-size: 85px;
                     color: #71D08C;
@@ -331,6 +332,65 @@ input[type=text], select, textarea {
         display: none;
     }
 }
+
+@media screen and (max-width: 430px) {
+    .project__titre{
+        padding-bottom: 0px;
+        &-full {
+            display: none;
+        }
+        &-empty {
+            display: none;
+        }
+        &-full-mobile {
+            text-align: center;
+            h3 {
+                color: #1E2123;
+                font-weight: 700;
+                font-size: 55px;
+                text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #fff, -1px 1px 0 #FFF, 1px 1px 0 #fff;
+            }
+        }   
+    }
+    .project__card {
+        margin: 20px 0px;
+        padding: 10px;
+        &__text h3 {
+            font-size: 35px;
+            margin-bottom: -15px;
+        }
+    }
+    .contact__titre {
+        align-items: center;
+        &-full {
+            display: none;
+        }
+        &-empty {
+            display: none;
+        }
+        &-full-mobile {
+            text-align: center;
+            h3 {
+                color: #1E2123;
+                font-weight: 700;
+                font-size: 55px;
+                text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #fff, -1px 1px 0 #FFF, 1px 1px 0 #fff;
+            }
+        }
+    }
+    .contact__content {
+        padding: 0px;
+    }
+}
+@media screen and (min-width: 430px) {
+    .project__titre-full-mobile {
+        display: none;
+    }
+    .contact__titre-full-mobile {
+        display: none;
+    }
+}
+
 
 @media screen and (min-width: 1030px) {
     .hero__desc {

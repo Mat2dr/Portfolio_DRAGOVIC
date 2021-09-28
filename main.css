@@ -181,6 +181,7 @@ body {
   line-height: 75px;
 }
 .hero__text-dessous-mobile h1 {
+  text-align: center;
   font-weight: 900;
   font-size: 85px;
   color: #71D08C;
@@ -466,6 +467,67 @@ input[type=text], select, textarea {
   }
 
   .iphone2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 430px) {
+  .project__titre {
+    padding-bottom: 0px;
+  }
+  .project__titre-full {
+    display: none;
+  }
+  .project__titre-empty {
+    display: none;
+  }
+  .project__titre-full-mobile {
+    text-align: center;
+  }
+  .project__titre-full-mobile h3 {
+    color: #1E2123;
+    font-weight: 700;
+    font-size: 55px;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #fff, -1px 1px 0 #FFF, 1px 1px 0 #fff;
+  }
+
+  .project__card {
+    margin: 20px 0px;
+    padding: 10px;
+  }
+  .project__card__text h3 {
+    font-size: 35px;
+    margin-bottom: -15px;
+  }
+
+  .contact__titre {
+    align-items: center;
+  }
+  .contact__titre-full {
+    display: none;
+  }
+  .contact__titre-empty {
+    display: none;
+  }
+  .contact__titre-full-mobile {
+    text-align: center;
+  }
+  .contact__titre-full-mobile h3 {
+    color: #1E2123;
+    font-weight: 700;
+    font-size: 55px;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #fff, -1px 1px 0 #FFF, 1px 1px 0 #fff;
+  }
+
+  .contact__content {
+    padding: 0px;
+  }
+}
+@media screen and (min-width: 430px) {
+  .project__titre-full-mobile {
+    display: none;
+  }
+
+  .contact__titre-full-mobile {
     display: none;
   }
 }
