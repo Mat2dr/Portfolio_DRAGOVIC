@@ -28,6 +28,7 @@ body {
                 color: #71D08C;
             }
             &-mobile {
+                line-height: 75px;
                 h1 {
                     font-weight: 900;
                     font-size: 85px;
@@ -292,7 +293,7 @@ input[type=text], select, textarea {
                 }
             }
             &-dessus {
-                margin-top: -35px;
+                margin-top: 0px;
                 padding-bottom: 20px;
                 h1 {
                     font-size: 30px;

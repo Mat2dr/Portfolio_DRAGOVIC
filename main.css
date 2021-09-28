@@ -177,6 +177,9 @@ body {
   font-size: 85px;
   color: #71D08C;
 }
+.hero__text-dessous-mobile {
+  line-height: 75px;
+}
 .hero__text-dessous-mobile h1 {
   font-weight: 900;
   font-size: 85px;
@@ -431,7 +434,7 @@ input[type=text], select, textarea {
     font-size: 80px;
   }
   .hero__text-dessus {
-    margin-top: -35px;
+    margin-top: 0px;
     padding-bottom: 20px;
   }
   .hero__text-dessus h1 {
