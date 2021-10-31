@@ -148,52 +148,54 @@ a {
 }
 
 body {
-  background-color: #1D1D1D;
+  background-color: #1d1d1d;
 }
 
 .hero {
+  position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   padding: 20px;
+  padding-bottom: 220px;
   max-width: 1440px;
   margin: auto;
 }
+.hero__titre {
+  margin-bottom: 50px;
+}
 .hero__img {
-  width: 30%;
-  min-width: 200px;
-  -webkit-animation: fade-in-bottom 1s both;
-  animation: fade-in-bottom 1s both;
-  animation-delay: 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero__img img {
+  width: 377px;
+  position: absolute;
+}
+.hero__img__text {
+  padding-top: 150px;
+  position: relative;
+  z-index: 5;
+  max-width: 80%;
+  margin: 0 80px;
+  padding-right: 0;
+  padding-left: 0;
+  font-family: Reckless, sans-serif;
+  color: #fffaf1;
+  font-size: 120px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(29, 29, 29, 0.2), 1px 0 0 rgba(29, 29, 29, 0.2), 0 -1px 0 rgba(29, 29, 29, 0.2), -1px 0 0 rgba(29, 29, 29, 0.2);
+}
+.hero__img__text h1 {
+  font-size: 45px;
+  font-weight: 900;
 }
 .hero__text {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-}
-.hero__text-dessous h1 {
-  font-weight: 900;
-  font-size: 85px;
-  color: #71D08C;
-}
-.hero__text-dessous-mobile {
-  line-height: 75px;
-}
-.hero__text-dessous-mobile h1 {
-  text-align: center;
-  font-weight: 900;
-  font-size: 85px;
-  color: #71D08C;
-}
-.hero__text-dessus {
-  margin-top: -50px;
-}
-.hero__text-dessus h1 {
-  color: #1E2123;
-  font-weight: 700;
-  font-size: 70px;
-  text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #fff, -1px 1px 0 #FFF, 1px 1px 0 #fff;
+  align-items: center;
 }
 .hero__icon i {
   font-size: 40px;
@@ -204,13 +206,13 @@ body {
   color: white;
 }
 .hero__icon .fa-linkedin:hover {
-  color: #FFCF95;
+  color: #ffcf95;
 }
 .hero__icon .fa-github {
   color: white;
 }
 .hero__icon .fa-github:hover {
-  color: #DBD8E2;
+  color: #dbd8e2;
 }
 
 .project {
@@ -240,10 +242,10 @@ body {
   margin: 20px 30px 30px 70px;
 }
 .project__titre-empty h3 {
-  color: #1E2123;
+  color: #1e2123;
   font-weight: 700;
   font-size: 70px;
-  text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #fff, -1px 1px 0 #FFF, 1px 1px 0 #fff;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 .project__mesprojets {
   display: flex;
@@ -341,10 +343,10 @@ body {
   margin-left: 55px;
 }
 .contact__titre-empty h3 {
-  color: #1E2123;
+  color: #1e2123;
   font-weight: 700;
   font-size: 70px;
-  text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #fff, -1px 1px 0 #FFF, 1px 1px 0 #fff;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 .contact__content {
   display: flex;
@@ -389,8 +391,10 @@ body {
   border: 2px solid white;
 }
 
-input[type=text], select, textarea {
-  background-color: #1E2123;
+input[type=text],
+select,
+textarea {
+  background-color: #1e2123;
   color: white;
   width: 100%;
   padding: 12px;
@@ -402,29 +406,11 @@ input[type=text], select, textarea {
 }
 
 @media screen and (max-width: 1413px) {
-  .hero__text-dessous h1 {
-    font-size: 70px;
-  }
-  .hero__text-dessus {
-    margin-top: -45px;
-  }
-  .hero__text-dessus h1 {
-    font-size: 50px;
-  }
-
-  h1 {
-    font-size: 120px;
-  }
-
   .macbook {
     max-width: 80%;
   }
 }
 @media screen and (max-width: 1030px) {
-  .hero {
-    flex-direction: column;
-    padding: 50px 20px 50px 20px;
-  }
   .hero__text {
     align-items: center;
   }
@@ -484,10 +470,10 @@ input[type=text], select, textarea {
     text-align: center;
   }
   .project__titre-full-mobile h3 {
-    color: #1E2123;
+    color: #1e2123;
     font-weight: 700;
     font-size: 55px;
-    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #fff, -1px 1px 0 #FFF, 1px 1px 0 #fff;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   }
 
   .project__card {
@@ -512,10 +498,10 @@ input[type=text], select, textarea {
     text-align: center;
   }
   .contact__titre-full-mobile h3 {
-    color: #1E2123;
+    color: #1e2123;
     font-weight: 700;
     font-size: 55px;
-    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #fff, -1px 1px 0 #FFF, 1px 1px 0 #fff;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   }
 
   .contact__content {
