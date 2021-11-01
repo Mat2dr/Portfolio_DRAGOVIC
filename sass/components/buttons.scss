@@ -1,26 +1,41 @@
 .btn-contact {
-    height: 35px;
-    padding: 0px 15px;
-    background-color: #FA777C;
-    border: none;
-    font-size: 16px;
-    color: #FFFFFF;
-    text-align: center;
-    border-radius: 10px;
+  height: 35px;
+  padding: 0px 15px;
+  background-color: #fa777c;
+  border: none;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 10px;
 }
 
 .call-btn {
-    padding: 12px 32px;
-    border: 1px solid #fffaf1;
-    border-radius: 2px;
-    background-color: #1d1d1d;
-    -webkit-perspective-origin: 0% 50%;
-    perspective-origin: 0% 50%;
-    -webkit-transform-origin: 0% 50%;
-    -ms-transform-origin: 0% 50%;
-    transform-origin: 0% 50%;
-    -webkit-transition: .2s;
-    transition: .2s;
-    font-weight: 700;
-    color: white;
+  padding: 12px 32px;
+  border: 1px solid #fffaf1;
+  border-radius: 2px;
+  background-color: #1d1d1d;
+  -webkit-perspective-origin: 0% 50%;
+  perspective-origin: 0% 50%;
+  -webkit-transform-origin: 0% 50%;
+  -ms-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+}
+
+.call-btn:hover {
+  background-color: #fffaf1;
+  -webkit-perspective-origin: 0% 50%;
+  perspective-origin: 0% 50%;
+  -webkit-transform-origin: 0% 50%;
+  -ms-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-weight: 600;
+  font-size: 16px;
+  color: black;
 }
