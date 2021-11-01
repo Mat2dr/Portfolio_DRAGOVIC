@@ -3,6 +3,19 @@
     src: url(content/Acworth/Acworth-Bold.otf);
 }
 
+@font-face {
+    font-family: Reckless;
+    src: url(fonts/DP_reckless/RecklessTRIAL-Regular.otf);
+    font-size: regular;
+    font-weight: 300;
+}
+@font-face {
+    font-family: Reckless;
+    src: url(fonts/DP_reckless/RecklessTRIAL-Heavy.otf);
+    font-size: heavy;
+    font-weight: 900;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     color: white;
