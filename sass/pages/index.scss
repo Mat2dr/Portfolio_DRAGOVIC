@@ -108,10 +108,6 @@ body {
   padding: 100px 20px 100px 20px;
   max-width: 1440px;
   margin: auto;
-  &-separator {
-    height: 1px;
-    background-color: #fffaf1;
-  }
   &__project {
     padding-bottom: 80px;
     &__type {
@@ -139,7 +135,13 @@ body {
   }
 }
 
+.separator {
+  height: 1px;
+  background-color: #fffaf1;
+}
+
 .testimonial-text {
+  padding: 0px 20px 0px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -157,6 +159,41 @@ body {
     font-size: 18px;
     text-align: center;
     text-transform: uppercase;
+  }
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 20px 100px 20px;
+  max-width: 1440px;
+  margin: auto;
+  h2 {
+    font-family: Reckless, sans-serif;
+    font-size: 80px;
+    line-height: 90px;
+    font-weight: 500;
+    padding: 20px 0px;
+  }
+  .question {
+    &__titre {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    h3 {
+      font-family: Reckless, sans-serif;
+      color: #fffaf1;
+      font-size: 32px;
+      padding: 20px 0px;
+    }
+    i {
+      font-size: 25px;
+    }
+    p {
+      padding-bottom: 20px;
+    }
   }
 }
 

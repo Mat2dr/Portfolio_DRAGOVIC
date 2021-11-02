@@ -301,10 +301,6 @@ body {
   max-width: 1440px;
   margin: auto;
 }
-.portfolio-separator {
-  height: 1px;
-  background-color: #fffaf1;
-}
 .portfolio__project {
   padding-bottom: 80px;
 }
@@ -331,7 +327,13 @@ body {
   line-height: 96px;
 }
 
+.separator {
+  height: 1px;
+  background-color: #fffaf1;
+}
+
 .testimonial-text {
+  padding: 0px 20px 0px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -350,6 +352,39 @@ body {
   font-size: 18px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 20px 100px 20px;
+  max-width: 1440px;
+  margin: auto;
+}
+.faq h2 {
+  font-family: Reckless, sans-serif;
+  font-size: 80px;
+  line-height: 90px;
+  font-weight: 500;
+  padding: 20px 0px;
+}
+.faq .question__titre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq .question h3 {
+  font-family: Reckless, sans-serif;
+  color: #fffaf1;
+  font-size: 32px;
+  padding: 20px 0px;
+}
+.faq .question i {
+  font-size: 25px;
+}
+.faq .question p {
+  padding-bottom: 20px;
 }
 
 @media screen and (max-width: 1413px) {
