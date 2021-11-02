@@ -114,6 +114,7 @@ body {
     background-color: #fffaf1;
   }
   &__project {
+    padding-bottom: 80px;
     &__type {
       font-size: 18px;
       font-weight: 400;
@@ -136,6 +137,27 @@ body {
         line-height: 96px;
       }
     }
+  }
+}
+
+.testimonial-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1440px;
+  margin: auto;
+  h3 {
+    font-family: Reckless, sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+  }
+  p {
+    margin-top: 24px;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
   }
 }
 
