@@ -387,6 +387,25 @@ body {
   padding-bottom: 20px;
 }
 
+.contacter {
+  display: flex;
+  flex-direction: row;
+  padding: 100px 20px 100px 20px;
+  max-width: 1440px;
+  margin: auto;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contacter__img img {
+  max-width: 500px;
+}
+.contacter__text h3 {
+  font-family: Reckless, sans-serif;
+  font-size: 80px;
+  line-height: 90px;
+  font-weight: 400;
+}
+
 @media screen and (max-width: 1413px) {
   .macbook {
     max-width: 80%;
