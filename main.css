@@ -184,6 +184,7 @@ a {
   justify-content: space-between;
   padding: 20px;
   position: relative;
+  z-index: 1;
 }
 .navbar__logo {
   padding-right: 10px;
@@ -253,6 +254,8 @@ body {
 .hero__titre {
   margin-bottom: 50px;
   font-size: 18px;
+  z-index: 5;
+  text-align: center;
 }
 .hero__img {
   display: flex;
@@ -291,6 +294,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 .call .work {
   padding-top: 100px;
@@ -347,6 +351,10 @@ body {
 .portfolio__project {
   padding-bottom: 80px;
 }
+.portfolio__project__header {
+  position: relative;
+  overflow: hidden;
+}
 .portfolio__project__type {
   font-size: 18px;
   font-weight: 400;
@@ -390,7 +398,7 @@ body {
 }
 
 .testimonial-text {
-  padding: 0px 20px 0px 20px;
+  padding: 0px 20px 80px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -463,6 +471,7 @@ body {
   font-size: 80px;
   line-height: 90px;
   font-weight: 400;
+  text-align: center;
 }
 .contacter__text .icons {
   display: flex;
@@ -479,7 +488,8 @@ body {
 }
 
 .reveal-img,
-.reveal-text {
+.reveal-text,
+.reveal-text-call {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -488,115 +498,70 @@ body {
   top: 0;
 }
 
-@media screen and (max-width: 1413px) {
-  .macbook {
-    max-width: 80%;
+@media screen and (max-width: 1000px) {
+  .contacter {
+    flex-direction: column;
   }
-}
-@media screen and (max-width: 1030px) {
-  .hero__text {
-    align-items: center;
-  }
-  .hero__text-dessous {
-    display: none;
-  }
-  .hero__text-dessous h1 {
-    font-size: 80px;
-  }
-  .hero__text-dessus {
-    margin-top: 0px;
-    padding-bottom: 20px;
-  }
-  .hero__text-dessus h1 {
-    font-size: 30px;
-  }
-  .hero__text p {
-    max-width: 450px;
-    padding-bottom: 5px;
-    font-size: 14px;
-  }
-  .hero__text a {
-    text-decoration: underline;
-    font-size: 14px;
-  }
-
-  .project__card__text p {
-    max-width: 317px;
-  }
-}
-@media screen and (max-width: 930px) {
-  .macbook {
+  .contacter__img {
     display: none;
   }
 }
-@media screen and (max-width: 430px) {
-  .project__titre {
-    padding-bottom: 0px;
+@media screen and (max-width: 660px) {
+  .hero {
+    padding-bottom: 350px;
   }
-  .project__titre-full {
-    display: none;
+  .hero__img__text h1 {
+    font-size: 100px;
   }
-  .project__titre-empty {
-    display: none;
-  }
-  .project__titre-full-mobile {
-    text-align: center;
-  }
-  .project__titre-full-mobile h3 {
-    color: #1e2123;
-    font-weight: 700;
-    font-size: 55px;
-    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
-  }
-
-  .project__card {
-    margin: 20px 0px;
-    padding: 10px;
-  }
-  .project__card__text h3 {
-    font-size: 35px;
-    margin-bottom: -15px;
-  }
-
-  .contact__titre {
-    align-items: center;
-  }
-  .contact__titre-full {
-    display: none;
-  }
-  .contact__titre-empty {
-    display: none;
-  }
-  .contact__titre-full-mobile {
-    text-align: center;
-  }
-  .contact__titre-full-mobile h3 {
-    color: #1e2123;
-    font-weight: 700;
-    font-size: 55px;
-    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
-  }
-
-  .contact__content {
-    padding: 0px;
+  .hero__img img {
+    width: 335px;
   }
 }
-@media screen and (min-width: 430px) {
-  .project__titre-full-mobile {
-    display: none;
+@media screen and (max-width: 530px) {
+  .portfolio__project__titre {
+    justify-content: flex-end;
   }
 
-  .contact__titre-full-mobile {
+  .portfolio__project__titre__num {
     display: none;
   }
 }
-@media screen and (min-width: 1030px) {
-  .hero__desc {
-    display: none;
+@media screen and (max-width: 440px) {
+  .hero {
+    padding-bottom: 290px;
+  }
+  .hero__img__text h1 {
+    font-size: 70px;
+  }
+  .hero__img img {
+    width: 280px;
   }
 
-  .hero__text-dessous-mobile {
-    display: none;
+  .about {
+    padding: 50px 20px 50px 20px;
+  }
+
+  .about h2 {
+    font-size: 60px;
+  }
+
+  .portfolio__project__titre__nom {
+    font-size: 60px;
+  }
+
+  .testimonial-text h3 {
+    font-size: 25px;
+  }
+
+  .faq {
+    padding: 50px 20px 50px 20px;
+  }
+  .faq h2 {
+    font-size: 60px;
+  }
+
+  .contacter__text h3 {
+    font-size: 60px;
   }
 }
 

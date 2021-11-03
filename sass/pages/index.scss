@@ -17,6 +17,8 @@ body {
   &__titre {
     margin-bottom: 50px;
     font-size: 18px;
+    z-index: 5;
+    text-align: center;
   }
   &__img {
     display: flex;
@@ -57,6 +59,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   .work {
     padding-top: 100px;
     h2 {
@@ -110,6 +113,10 @@ body {
   margin: auto;
   &__project {
     padding-bottom: 80px;
+    &__header {
+      position: relative;
+      overflow: hidden;
+    }
     &__type {
       font-size: 18px;
       font-weight: 400;
@@ -155,7 +162,7 @@ body {
 }
 
 .testimonial-text {
-  padding: 0px 20px 0px 20px;
+  padding: 0px 20px 80px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -232,6 +239,7 @@ body {
       font-size: 80px;
       line-height: 90px;
       font-weight: 400;
+      text-align: center;
     }
     .icons {
       display: flex;
@@ -250,7 +258,8 @@ body {
 }
 
 .reveal-img,
-.reveal-text {
+.reveal-text,
+.reveal-text-call {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -259,117 +268,75 @@ body {
   top: 0;
 }
 
-@media screen and (max-width: 1413px) {
-  .macbook {
-    max-width: 80%;
+@media screen and (max-width: 1000px) {
+  .contacter {
+    flex-direction: column;
+    &__img {
+      display: none;
+    }
   }
 }
-@media screen and (max-width: 1030px) {
+
+@media screen and (max-width: 660px) {
   .hero {
-    &__text {
-      align-items: center;
-      &-dessous {
-        display: none;
+    padding-bottom: 350px;
+    &__img {
+      &__text {
         h1 {
-          font-size: 80px;
+          font-size: 100px;
         }
       }
-      &-dessus {
-        margin-top: 0px;
-        padding-bottom: 20px;
+      img {
+        width: 335px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .portfolio__project__titre {
+    justify-content: flex-end;
+  }
+  .portfolio__project__titre__num {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .hero {
+    padding-bottom: 290px;
+    &__img {
+      &__text {
         h1 {
-          font-size: 30px;
+          font-size: 70px;
         }
       }
-      p {
-        max-width: 450px;
-        padding-bottom: 5px;
-        font-size: 14px;
-      }
-      a {
-        text-decoration: underline;
-        font-size: 14px;
+      img {
+        width: 280px;
       }
     }
   }
-  .project__card__text {
-    p {
-      max-width: 317px;
-    }
+  .about {
+    padding: 50px 20px 50px 20px;
   }
-}
+  .about h2 {
+    font-size: 60px;
+  }
+  .portfolio__project__titre__nom {
+    font-size: 60px;
+  }
+  .testimonial-text h3 {
+    font-size: 25px;
+  }
 
-@media screen and (max-width: 930px) {
-  .macbook {
-    display: none;
+  .faq {
+    padding: 50px 20px 50px 20px;
+    h2 {
+      font-size: 60px;
+    }
   }
-}
 
-@media screen and (max-width: 430px) {
-  .project__titre {
-    padding-bottom: 0px;
-    &-full {
-      display: none;
-    }
-    &-empty {
-      display: none;
-    }
-    &-full-mobile {
-      text-align: center;
-      h3 {
-        color: #1e2123;
-        font-weight: 700;
-        font-size: 55px;
-        text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
-          1px 1px 0 #fff;
-      }
-    }
-  }
-  .project__card {
-    margin: 20px 0px;
-    padding: 10px;
-    &__text h3 {
-      font-size: 35px;
-      margin-bottom: -15px;
-    }
-  }
-  .contact__titre {
-    align-items: center;
-    &-full {
-      display: none;
-    }
-    &-empty {
-      display: none;
-    }
-    &-full-mobile {
-      text-align: center;
-      h3 {
-        color: #1e2123;
-        font-weight: 700;
-        font-size: 55px;
-        text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
-          1px 1px 0 #fff;
-      }
-    }
-  }
-  .contact__content {
-    padding: 0px;
-  }
-}
-@media screen and (min-width: 430px) {
-  .project__titre-full-mobile {
-    display: none;
-  }
-  .contact__titre-full-mobile {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1030px) {
-  .hero__desc {
-    display: none;
-  }
-  .hero__text-dessous-mobile {
-    display: none;
+  .contacter__text h3 {
+    font-size: 60px;
   }
 }
