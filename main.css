@@ -183,6 +183,7 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  position: relative;
 }
 .navbar__logo {
   padding-right: 10px;
@@ -378,6 +379,10 @@ body {
   text-decoration: none;
   color: #fff;
 }
+.portfolio__project__img {
+  position: relative;
+  overflow: hidden;
+}
 
 .separator {
   height: 1px;
@@ -471,6 +476,16 @@ body {
 }
 .contacter__text .icons i:hover {
   color: #bebebe;
+}
+
+.reveal-img,
+.reveal-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #1d1d1d;
+  left: 0;
+  top: 0;
 }
 
 @media screen and (max-width: 1413px) {
