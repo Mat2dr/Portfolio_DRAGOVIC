@@ -119,6 +119,7 @@ a {
   font-weight: 600;
   font-size: 16px;
   color: white;
+  cursor: pointer;
 }
 
 .call-btn:hover {
@@ -133,6 +134,47 @@ a {
   font-weight: 600;
   font-size: 16px;
   color: black;
+  cursor: pointer;
+}
+.call-btn:hover a {
+  color: black;
+}
+
+.call-btn-active {
+  padding: 12px 32px;
+  border: 1px solid #fffaf1;
+  background-color: #fffaf1;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 16px;
+  -webkit-perspective-origin: 0% 50%;
+  perspective-origin: 0% 50%;
+  -webkit-transform-origin: 0% 50%;
+  -ms-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-weight: 600;
+  font-size: 16px;
+  color: black;
+  cursor: pointer;
+}
+.call-btn-active a {
+  color: black;
+}
+
+.call-btn-active:hover {
+  border: 1px solid #fffaf1;
+  background-color: #1d1d1d;
+  -webkit-perspective-origin: 0% 50%;
+  perspective-origin: 0% 50%;
+  -webkit-transform-origin: 0% 50%;
+  -ms-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: white;
+  cursor: pointer;
 }
 
 .navbar {
@@ -326,6 +368,16 @@ body {
   font-size: 80px;
   line-height: 96px;
 }
+.portfolio__project__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+.portfolio__project__button a {
+  text-decoration: none;
+  color: #fff;
+}
 
 .separator {
   height: 1px;
@@ -373,6 +425,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 .faq .question h3 {
   font-family: Reckless, sans-serif;
@@ -381,6 +434,7 @@ body {
   padding: 20px 0px;
 }
 .faq .question i {
+  margin-left: 10px;
   font-size: 25px;
 }
 .faq .question p {
@@ -404,6 +458,19 @@ body {
   font-size: 80px;
   line-height: 90px;
   font-weight: 400;
+}
+.contacter__text .icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.contacter__text .icons i {
+  font-size: 40px;
+  cursor: pointer;
+}
+.contacter__text .icons i:hover {
+  color: #bebebe;
 }
 
 @media screen and (max-width: 1413px) {

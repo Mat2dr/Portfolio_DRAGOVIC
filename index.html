@@ -49,9 +49,7 @@
 
         <section>
             <div class="call">
-                <button class="call-btn">
-                    ME CONTACTER
-                </button>
+                <a href="#contact"><button class="call-btn">ME CONTACTER</button></a>
                 <div class="work">
                     <h2>J'ai travaillé avec:</h2>
                     <div class="work__img">
@@ -72,7 +70,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="projets">
             <div class="portfolio">
 
                 <div class="portfolio__project">
@@ -85,6 +83,10 @@
                     <div class="portfolio__project__img">
                         <img src="./content/TodoAPP.png" alt="Image de la todoApp">
                     </div>
+                    <div class="portfolio__project__button">
+                        <a href="https://mat2dr.github.io/todoAPP/" target="_blank"><button class="call-btn-active">Voir le projet</button></a>
+                        <a href="https://github.com/Mat2dr/todoAPP" target="_blank"><button class="call-btn">Voir le code</button></a>
+                    </div>
                 </div>
 
                 <div class="portfolio__project">
@@ -95,7 +97,11 @@
                         <div class="portfolio__project__titre__nom ">GameOn</div>
                     </div>
                     <div class="portfolio__project__img">
-                        <img src="./content/GameOn.png" alt="Image de la todoApp">
+                        <img src="./content/GameOn.png" alt="Image de GameOn">
+                    </div>
+                    <div class="portfolio__project__button">
+                        <a href="https://mat2dr.github.io/GameOn-website-FR/" target="_blank"><button class="call-btn-active">Voir le projet</button></a>
+                        <a href="https://github.com/Mat2dr/GameOn-website-FR" target="_blank"><button class="call-btn">Voir le code</button></a>
                     </div>
                 </div>
 
@@ -107,7 +113,11 @@
                         <div class="portfolio__project__titre__nom ">Ohmyfood</div>
                     </div>
                     <div class="portfolio__project__img">
-                        <img src="./content/Ohmyfood.png" alt="Image de la todoApp">
+                        <img src="./content/Ohmyfood.png" alt="Image de Ohmyfood">
+                    </div>
+                    <div class="portfolio__project__button">
+                        <a href="https://mat2dr.github.io/DragovicMathias_P3_30072021/" target="_blank"><button class="call-btn-active">Voir le projet</button></a>
+                        <a href="https://github.com/Mat2dr/DragovicMathias_P3_30072021" target="_blank"><button class="call-btn">Voir le code</button></a>
                     </div>
                 </div>
 
@@ -119,7 +129,11 @@
                         <div class="portfolio__project__titre__nom ">Reservia</div>
                     </div>
                     <div class="portfolio__project__img">
-                        <img src="./content/Reservia.png" alt="Image de la todoApp">
+                        <img src="./content/Reservia.png" alt="Image de Reservia">
+                    </div>
+                    <div class="portfolio__project__button">
+                        <a href="https://mat2dr.github.io/DragovicMathias_P2_01062021/" target="_blank"><button class="call-btn-active">Voir le projet</button></a>
+                        <a href="https://github.com/Mat2dr/DragovicMathias_P2_01062021" target="_blank"><button class="call-btn">Voir le code</button></a>
                     </div>
                 </div>
 
@@ -163,20 +177,20 @@
             </div>
         </section>
 
-        <section>
+        <section id="contact">
             <div class="contacter">
                 <div class="contacter__img">
                     <img src="./content/julian-christian-anderson-_y0tTb95xeY-unsplash.jpg" alt="Photo travail">
                 </div>
                 <div class="contacter__text">
                     <h3>Me contacter</h3>
-                    <button class="call-btn">E-mail</button>
                     <div class="icons">
+                        <a href = "mailto: dragovic.mathias@gmail.com"><button class="call-btn">E-mail</button></a>
                         <div class="linkedin">
-                            <i class="fa-brands fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/mathias-dragovic/" target="_blank"><i class="fa fa-linkedin"></i></a>
                         </div>
                         <div class="Github">
-                            <i class="fa-brands fa-linkedin"></i>
+                            <a href="https://github.com/Mat2dr" target="_blank"><i class="fa fa-github"></i></a>
                         </div>
                     </div>
                 </div>
@@ -187,7 +201,7 @@
             <p>Copyright DRAGOVIC Mathias 2021</p>
         </section>
     </div>
-    
+    <script src="./app.js"></script>
 </body>
 
 </html>

@@ -132,6 +132,16 @@ body {
         line-height: 96px;
       }
     }
+    &__button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 10px;
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
   }
 }
 
@@ -181,6 +191,7 @@ body {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      cursor: pointer;
     }
     h3 {
       font-family: Reckless, sans-serif;
@@ -189,6 +200,7 @@ body {
       padding: 20px 0px;
     }
     i {
+      margin-left: 10px;
       font-size: 25px;
     }
     p {
@@ -216,6 +228,19 @@ body {
       font-size: 80px;
       line-height: 90px;
       font-weight: 400;
+    }
+    .icons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      i {
+        font-size: 40px;
+        cursor: pointer;
+      }
+      i:hover {
+        color: #bebebe;
+      }
     }
   }
 }
