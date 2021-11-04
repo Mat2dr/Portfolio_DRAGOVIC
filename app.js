@@ -10,6 +10,20 @@ function cursor(e) {
     mouse.style.top = e.pageY + 'px';
     mouse.style.left = e.pageX + 'px';
 }
+function activeCursor(e) {
+    const item = e.target;
+
+    if (item.id === "logo"  || item.classList.contains("burger")) {
+        mouse.classList.add('nav-active');
+    } else {
+        mouse.classList.remove('nav-active');
+    }
+    if (item.classList.contains("btn")) {
+        mouse.classList.add("btn-active");
+    } else {
+        mouse.classList.remove("btn-active");
+    }
+}
 
 function animateHead() {
     controller = new ScrollMagic.Controller();
@@ -51,7 +65,7 @@ function animateAbout() {
     const aboutTl = gsap.timeline({
         defaults: { duration: 1, ease: "power2.inOut" }
     });
-    aboutTl.fromTo(about, {opacity: 0}, { opacity: 1}, "-=0.75");
+    aboutTl.fromTo(about, {opacity: 0}, { opacity: 1});
     //create Scene
     aboutScene = new ScrollMagic.Scene({
         triggerElement: about,
@@ -131,6 +145,16 @@ function animateFaq() {
     .addTo(controller);
 };
 
+function openQuestion() {
+    const questions = document.querySelectorAll('.question');
+    
+    questions.forEach((question) => {
+        question.addEventListener("click", () => {
+            question.classList.toggle("active");
+        });
+    });
+};
+
 
 function animateContact() {
     //init Controller
@@ -153,10 +177,19 @@ function animateContact() {
 
 
 window.addEventListener("mousemove", cursor);
+window.addEventListener("mouseover", activeCursor);
+
 animateHead();
+
 animateCall();
+
 animateAbout();
+
 animateProject();
+
 animateTestimonial();
+
 animateFaq();
+openQuestion();
+
 animateContact();
