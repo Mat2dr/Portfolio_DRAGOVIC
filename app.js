@@ -33,8 +33,8 @@ function animateCall() {
     const callTl = gsap.timeline({
         defaults: { duration: 1, ease: "power2.inOut" }
     });
-
     callTl.fromTo(revealTextCall, {opacity: 1}, { opacity: 0}, "=2.5");
+    callTl.fromTo(revealTextCall, { x: '0%' }, { x: '100%' }, "-=0.75");
 };
 
 function animateAbout() {
