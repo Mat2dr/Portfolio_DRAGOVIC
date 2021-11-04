@@ -1,3 +1,4 @@
+
 let controller;
 let aboutScene;
 let projectScene;
@@ -6,6 +7,7 @@ let faqScene;
 let contactScene;
 
 const mouse = document.querySelector('.cursor');
+
 function cursor(e) {
     mouse.style.top = e.pageY + 'px';
     mouse.style.left = e.pageX + 'px';
@@ -26,7 +28,6 @@ function activeCursor(e) {
 }
 
 function animateHead() {
-    controller = new ScrollMagic.Controller();
 
     const nav = document.querySelector('.navbar');
     const img = document.querySelector('img');
@@ -46,8 +47,6 @@ function animateHead() {
 };
 
 function animateCall() {
-    controller = new ScrollMagic.Controller();
-
     const revealTextCall = document.querySelector(".reveal-text-call");
 
     const callTl = gsap.timeline({
@@ -114,15 +113,19 @@ function animateTestimonial() {
     const testimonialTl = gsap.timeline({
         defaults: { duration: 1, ease: "power2.inOut" }
     });
-    testimonialTl.fromTo(testimonial, {opacity: 0}, { opacity: 1}, "-=0.75");
-    //create Scene
-    aboutScene = new ScrollMagic.Scene({
-        triggerElement: testimonial,
-        triggerHook: 0.60,
-        reverse: false
-    })
-        .setTween(testimonialTl)
-    .addTo(controller);
+    ScrollTrigger.matchMedia({
+        "(min-width: 800px)": function() {
+            testimonialTl.fromTo(testimonial, {opacity: 0}, { opacity: 1}, "-=0.75");
+            //create Scene
+            aboutScene = new ScrollMagic.Scene({
+                triggerElement: testimonial,
+                triggerHook: 0.60,
+                reverse: false
+            })
+                .setTween(testimonialTl)
+            .addTo(controller);
+        }
+    });
 };
 
 
@@ -131,18 +134,22 @@ function animateFaq() {
     controller = new ScrollMagic.Controller();
     //Select some things
     const faq = document.querySelectorAll('.faq');
-    const faqTl = gsap.timeline({
-        defaults: { duration: 1, ease: "power2.inOut" }
+    ScrollTrigger.matchMedia({
+        "(min-width: 800px)": function() {
+            const faqTl = gsap.timeline({
+                defaults: { duration: 1, ease: "power2.inOut" }
+            });
+            faqTl.fromTo(faq, {opacity: 0}, { opacity: 1}, "-=0.8");
+            //create Scene
+            faqScene = new ScrollMagic.Scene({
+                triggerElement: faq,
+                triggerHook: 0.30,
+                reverse: false
+            })
+                .setTween(faqTl)
+            .addTo(controller);
+        }
     });
-    faqTl.fromTo(faq, {opacity: 0}, { opacity: 1}, "-=0.8");
-    //create Scene
-    faqScene = new ScrollMagic.Scene({
-        triggerElement: faq,
-        triggerHook: 0.30,
-        reverse: false
-    })
-        .setTween(faqTl)
-    .addTo(controller);
 };
 
 function openQuestion() {
@@ -161,20 +168,23 @@ function animateContact() {
     controller = new ScrollMagic.Controller();
     //Select some things
     const contact = document.querySelectorAll('.contacter');
-    const contactTl = gsap.timeline({
-        defaults: { duration: 1, ease: "power2.inOut" }
+    ScrollTrigger.matchMedia({
+        "(min-width: 800px)": function() {
+            const contactTl = gsap.timeline({
+                defaults: { duration: 1, ease: "power2.inOut" }
+            });
+            contactTl.fromTo(contact, {opacity: 0}, { opacity: 1}, "-=0.75");
+            //create Scene
+            contactScene = new ScrollMagic.Scene({
+                triggerElement: contact,
+                triggerHook: 0.60,
+                reverse: false
+            })
+                .setTween(contactTl)
+            .addTo(controller);
+        }
     });
-    contactTl.fromTo(contact, {opacity: 0}, { opacity: 1}, "-=0.75");
-    //create Scene
-    contactScene = new ScrollMagic.Scene({
-        triggerElement: contact,
-        triggerHook: 0.60,
-        reverse: false
-    })
-        .setTween(contactTl)
-    .addTo(controller);
 };
-
 
 window.addEventListener("mousemove", cursor);
 window.addEventListener("mouseover", activeCursor);

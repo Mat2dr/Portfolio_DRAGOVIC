@@ -223,6 +223,10 @@ a {
   opacity: 40%;
 }
 
+* {
+  overflow-x: hidden;
+}
+
 body {
   background-color: #1d1d1d;
   overflow-x: hidden;
