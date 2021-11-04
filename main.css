@@ -560,6 +560,10 @@ body {
   .portfolio__project__titre__num {
     display: none;
   }
+
+  .cursor {
+    display: none;
+  }
 }
 @media screen and (max-width: 440px) {
   .hero {
