@@ -27,24 +27,12 @@
       }
     }
   }
-  &__desc {
-    max-width: 450px;
-    & p {
-      font-weight: 300;
-    }
-    & a {
-      text-decoration: underline;
-    }
-  }
   &__main {
     display: flex;
     column-gap: 10px;
-    text-decoration: underline;
-  }
-}
-
-@media screen and (max-width: 1030px) {
-  .navbar__desc {
-    display: none;
+    text-decoration: none;
+    a:hover {
+      color: #818181;
+    }
   }
 }

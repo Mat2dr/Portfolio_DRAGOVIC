@@ -5,6 +5,12 @@ let testimonialScene;
 let faqScene;
 let contactScene;
 
+const mouse = document.querySelector('.cursor');
+function cursor(e) {
+    mouse.style.top = e.pageY + 'px';
+    mouse.style.left = e.pageX + 'px';
+}
+
 function animateHead() {
     controller = new ScrollMagic.Controller();
 
@@ -18,7 +24,7 @@ function animateHead() {
     const navTl = gsap.timeline({
         defaults: { duration: 2, ease: "power2.inOut" }
     });
-    navTl.fromTo(nav, { y: '-100%' }, { y: '0%' }, "=0.5");
+    navTl.fromTo(nav, { y: '-100%' }, { y: '0%' }, "=1");
     navTl.fromTo(img, {opacity: 0}, { opacity: 1}, "-=1.5");
     navTl.fromTo(title, {opacity: 0}, { opacity: 1}, "-=1.5");
     navTl.fromTo(smalltitle, {opacity: 0}, { opacity: 1}, "-=1.5");
@@ -145,6 +151,8 @@ function animateContact() {
     .addTo(controller);
 };
 
+
+window.addEventListener("mousemove", cursor);
 animateHead();
 animateCall();
 animateAbout();
