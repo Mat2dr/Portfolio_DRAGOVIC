@@ -224,7 +224,7 @@ body {
       pointer-events: none;
     }
     i {
-      margin-left: 10px;
+      padding: 10px;
       font-size: 25px;
       transition: all 1s ease;
       pointer-events: none;
@@ -347,6 +347,13 @@ body {
   .cursor {
     display: none;
   }
+  .faq h2 {
+    font-size: 60px;
+    line-height: 65px;
+  }
+  .faq .question h3 {
+    font-size: 25px;
+  }
 }
 
 @media screen and (max-width: 440px) {
@@ -379,7 +386,11 @@ body {
   .faq {
     padding: 50px 20px 50px 20px;
     h2 {
-      font-size: 60px;
+      font-size: 45px;
+      line-height: 50px;
+    }
+    .question h3 {
+      font-size: 25px;
     }
   }
 

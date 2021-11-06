@@ -449,7 +449,7 @@ body {
   pointer-events: none;
 }
 .faq .question i {
-  margin-left: 10px;
+  padding: 10px;
   font-size: 25px;
   transition: all 1s ease;
   pointer-events: none;
@@ -564,6 +564,15 @@ body {
   .cursor {
     display: none;
   }
+
+  .faq h2 {
+    font-size: 60px;
+    line-height: 65px;
+  }
+
+  .faq .question h3 {
+    font-size: 25px;
+  }
 }
 @media screen and (max-width: 440px) {
   .hero {
@@ -596,7 +605,11 @@ body {
     padding: 50px 20px 50px 20px;
   }
   .faq h2 {
-    font-size: 60px;
+    font-size: 45px;
+    line-height: 50px;
+  }
+  .faq .question h3 {
+    font-size: 25px;
   }
 
   .contacter__text h3 {

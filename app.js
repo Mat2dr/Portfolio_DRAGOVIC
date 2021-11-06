@@ -143,7 +143,7 @@ function animateFaq() {
             //create Scene
             faqScene = new ScrollMagic.Scene({
                 triggerElement: faq,
-                triggerHook: 0.30,
+                triggerHook: 0.50,
                 reverse: false
             })
                 .setTween(faqTl)
