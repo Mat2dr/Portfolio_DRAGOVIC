@@ -1,15 +1,21 @@
-.portfolio {
+.portfolioP {
   padding: 100px 20px 100px 20px;
   max-width: 1440px;
   margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
   &__project {
-    padding-bottom: 80px;
+    max-width: 375px;
     &__header {
       position: relative;
       overflow: hidden;
     }
     &__type {
-      font-size: 18px;
+      font-size: 15px;
       font-weight: 400;
       text-align: right;
       text-transform: uppercase;
@@ -17,17 +23,11 @@
     &__titre {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: end;
       align-items: center;
       &__nom {
         font-family: Reckless, sans-serif;
-        font-size: 80px;
-        line-height: 96px;
-      }
-      &__num {
-        font-family: Reckless, sans-serif;
-        font-size: 80px;
-        line-height: 96px;
+        font-size: 50px;
       }
     }
     &__button {
@@ -43,6 +43,15 @@
     &__img {
       position: relative;
       overflow: hidden;
+      & img {
+        max-width: 375px;
+      }
     }
+  }
+}
+
+@media screen and (max-width: 1270px) {
+  .portfolioP {
+    justify-content: space-around;
   }
 }
