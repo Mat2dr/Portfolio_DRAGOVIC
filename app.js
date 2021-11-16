@@ -177,7 +177,7 @@ function animateContact() {
             //create Scene
             contactScene = new ScrollMagic.Scene({
                 triggerElement: contact,
-                triggerHook: 0.60,
+                triggerHook: 0.90,
                 reverse: false
             })
                 .setTween(contactTl)
@@ -185,6 +185,28 @@ function animateContact() {
         }
     });
 };
+
+
+window.addEventListener("mousemove", cursor);
+window.addEventListener("mouseover", activeCursor);
+
+animateHead();
+
+animateCall();
+
+animateAbout();
+
+animateProject();
+
+animateTestimonial();
+
+animateFaq();
+openQuestion();
+
+animateContact();
+
+
+
 
 
 
@@ -202,7 +224,6 @@ barba.init({
         animateProject();
         animateTestimonial();
         animateFaq();
-        openQuestion();
         animateContact();
       },
       beforeLeave() {
@@ -218,7 +239,6 @@ barba.init({
         animateProject();
         animateTestimonial();
         animateFaq();
-        openQuestion();
         animateContact();
       },
       beforeLeave() {
@@ -265,21 +285,3 @@ barba.init({
     }
   ]
 });
-
-window.addEventListener("mousemove", cursor);
-window.addEventListener("mouseover", activeCursor);
-
-animateHead();
-
-animateCall();
-
-animateAbout();
-
-animateProject();
-
-animateTestimonial();
-
-animateFaq();
-openQuestion();
-
-animateContact();
