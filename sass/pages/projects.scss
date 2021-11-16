@@ -1,0 +1,48 @@
+.portfolio {
+  padding: 100px 20px 100px 20px;
+  max-width: 1440px;
+  margin: auto;
+  &__project {
+    padding-bottom: 80px;
+    &__header {
+      position: relative;
+      overflow: hidden;
+    }
+    &__type {
+      font-size: 18px;
+      font-weight: 400;
+      text-align: right;
+      text-transform: uppercase;
+    }
+    &__titre {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      &__nom {
+        font-family: Reckless, sans-serif;
+        font-size: 80px;
+        line-height: 96px;
+      }
+      &__num {
+        font-family: Reckless, sans-serif;
+        font-size: 80px;
+        line-height: 96px;
+      }
+    }
+    &__button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 10px;
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+    &__img {
+      position: relative;
+      overflow: hidden;
+    }
+  }
+}
