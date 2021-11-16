@@ -18,20 +18,20 @@
 </head>
 
 <body>
-    <div class="container">
-        <section class="header">
 
-            <div class="navbar">
-                <a href="index.html" class="navbar__logo">
-                    <div class="navbar__logo__nom">
-                        <h2 class="prenom">DRAGOVIC Mathias</h2>
-                    </div>
-                </a>
-                <div class="navbar__main">
-                    <a href="#projets">Projets</a>
-                    <a href="#contact">Contact</a>
-                </div>
+    <div class="navbar" data-barba="wrapper">
+        <a href="index.html" class="navbar__logo">
+            <div class="navbar__logo__nom">
+                <h2 class="prenom">DRAGOVIC Mathias</h2>
             </div>
+        </a>
+        <div class="navbar__main">
+            <a href="#projets">Projets</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+    <div class="container" data-barba="container" data-barba-namespace="home">
+        <section class="header">
 
             <div class="hero">
                 <div class="reveal-img"></div>
@@ -45,9 +45,9 @@
                     <img src="content/Mathias.png" alt="Photo de Dragovic Mathias">
                 </div>
             </div>
-
+    
         </section>
-
+        
         <section>
             <div class="call">
                 <a href="#contact"><button class="call-btn btn">ME CONTACTER</button></a>
@@ -220,6 +220,8 @@
     <div class="swipe swipe1"></div>
     <div class="swipe swipe2"></div>
     <div class="swipe swipe3"></div>
+
+    <script src="https://unpkg.com/@barba/core"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js" integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
