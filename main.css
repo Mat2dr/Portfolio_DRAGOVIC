@@ -167,6 +167,7 @@ a {
 }
 
 .btn-more {
+  max-width: 400px;
   padding: 30px 32px;
   border: 1px solid #fffaf1;
   border-radius: 2px;
@@ -361,12 +362,17 @@ body {
 }
 
 .portfolio {
-  padding: 100px 20px 100px 20px;
+  padding: 100px 20px 10px 20px;
   max-width: 1440px;
   margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .portfolio__project {
   padding-bottom: 80px;
+  max-width: 600px;
 }
 .portfolio__project__header {
   position: relative;
@@ -407,6 +413,12 @@ body {
 .portfolio__project__img {
   position: relative;
   overflow: hidden;
+}
+
+.div-btn-more {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
 }
 
 .separator {
@@ -590,12 +602,28 @@ body {
   z-index: 8;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1400px) {
+  .portfolio__project {
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .portfolio__project {
+    max-width: 400px;
+  }
+
+  .portfolio__project__titre__num {
+    display: none;
+  }
+
   .contacter {
     flex-direction: column;
   }
-  .contacter__img {
-    display: none;
+  .contacter__text {
+    margin-top: -60px;
+  }
+  .contacter__img img {
+    max-width: 300px;
   }
 }
 @media screen and (max-width: 660px) {
@@ -614,10 +642,6 @@ body {
     justify-content: flex-end;
   }
 
-  .portfolio__project__titre__num {
-    display: none;
-  }
-
   .cursor {
     display: none;
   }
@@ -629,6 +653,10 @@ body {
 
   .faq .question h3 {
     font-size: 25px;
+  }
+
+  .contacter__text h3 {
+    font-size: 62px;
   }
 }
 @media screen and (max-width: 440px) {
@@ -669,8 +697,12 @@ body {
     font-size: 25px;
   }
 
+  .contacter__text {
+    margin-top: 0px;
+  }
+
   .contacter__text h3 {
-    font-size: 60px;
+    font-size: 40px;
   }
 }
 .portfolioP {

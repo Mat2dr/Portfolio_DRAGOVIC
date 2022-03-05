@@ -116,11 +116,16 @@ body {
 }
 
 .portfolio {
-  padding: 100px 20px 100px 20px;
+  padding: 100px 20px 10px 20px;
   max-width: 1440px;
   margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
   &__project {
     padding-bottom: 80px;
+    max-width: 600px;
     &__header {
       position: relative;
       overflow: hidden;
@@ -162,6 +167,11 @@ body {
       overflow: hidden;
     }
   }
+}
+.div-btn-more {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
 }
 
 .separator {
@@ -343,11 +353,26 @@ body {
   z-index: 8;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1400px) {
+  .portfolio__project {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .portfolio__project {
+    max-width: 400px;
+  }
+  .portfolio__project__titre__num {
+    display: none;
+  }
   .contacter {
     flex-direction: column;
-    &__img {
-      display: none;
+    &__text {
+      margin-top: -60px;
+    }
+    &__img img{
+      max-width: 300px;
     }
   }
 }
@@ -372,9 +397,6 @@ body {
   .portfolio__project__titre {
     justify-content: flex-end;
   }
-  .portfolio__project__titre__num {
-    display: none;
-  }
   .cursor {
     display: none;
   }
@@ -384,6 +406,9 @@ body {
   }
   .faq .question h3 {
     font-size: 25px;
+  }
+  .contacter__text h3 {
+    font-size: 62px;
   }
 }
 
@@ -424,8 +449,10 @@ body {
       font-size: 25px;
     }
   }
-
+  .contacter__text {
+    margin-top: 0px;
+  }
   .contacter__text h3 {
-    font-size: 60px;
+    font-size: 40px;
   }
 }
